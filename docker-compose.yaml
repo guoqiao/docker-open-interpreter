@@ -1,0 +1,11 @@
+---
+services:
+  app:
+    # run `make build` to build this image
+    image: guoqiao/open-interpreter:latest
+    container_name: open-interpreter
+    volumes:
+      - ${OPEN_INTERPRETER_MODELS_DIR}:/root/.local/share/Open Interpreter/models
+    env_file:
+      - .env
+    command: ["sleep", "infinity"]

@@ -1,0 +1,6 @@
+tmp/
+.git/
+.env
+.env.*
+README.md
+Makefile
